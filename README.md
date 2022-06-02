@@ -5,7 +5,10 @@ Hex Rays IDA Flatpak.
 
 ## Building
 
+Build using the following command:
+```
 flatpak run org.flatpak.Builder --user --install --force-clean build-dir io.extra2000.hexrays.ida.yml
+```
 
 Put IDA installer into `~/.var/app/io.extra2000.hexrays.ida/data/`. Make sure to allow execution for example:
 ```
