@@ -1,0 +1,25 @@
+app-id: io.extra2000.hexrays.ida
+runtime: org.gnome.Sdk
+runtime-version: '42'
+sdk: org.gnome.Sdk
+tags:
+  - proprietary
+
+finish-args:
+  - --require-version=1.7.1
+  - --share=ipc
+  - --socket=x11
+  - --share=network
+  - --device=all
+  - --persist=.
+  - --talk-name=org.gnome.SessionManager
+  - --env=LC_ALL=en_US.UTF-8
+  - --env=LD_LIBRARY_PATH=/app/lib
+  - --env=TERMINFO=/app/share/terminfo
+
+cleanup:
+  - /lib/debug
+  - /lib/pkgconfig
+  - /share/man
+
+modules: {}
